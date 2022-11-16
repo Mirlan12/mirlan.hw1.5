@@ -1,9 +1,35 @@
 public class Hero {
-    private
-    public static int[] heroHealth = {250, 300};
-    public static int[] heroDamage = {150, 250};
-ggg
+    private int health;
 
-    public static String[] heroAttack = {"Magic", "Killer"};
+    private int damage;
+    private String ability;
 
+    public int getHealth() {
+        return health;
+    }
+
+    public int getDamage() {
+        return damage;
+    }
+
+    public String getAbility() {
+        return ability;
+    }
+
+    public Hero(int health, int damage) {
+        this.health = health;
+        this.damage = damage;
+    }
+
+    public Hero(int health, int damage, String ability) {
+        this.health = health;
+        this.damage = damage;
+        this.ability = ability;
+    }
 }
+
+
+
+
+
+
